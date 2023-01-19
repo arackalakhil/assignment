@@ -67,7 +67,7 @@ const SignupPage = () => {
                 showConfirmButton: false,
                 timer: 1500
 })
-navigate("/login")
+navigate("/")
 
 
 			}
@@ -321,7 +321,7 @@ navigate("/login")
 								<div className="text-center" >
 									<a
 										className="inline-block text-sm text-blue-500 align-baseline hover:text-blue-800"
-										onClick={() => navigate('/login')}
+										onClick={() => navigate('/')}
 									>
 										Already have an account? Login!
 									</a>
