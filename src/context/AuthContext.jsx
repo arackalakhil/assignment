@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
         e.preventDefault()
         console.log("form submitted");
         console.log(e.target.username.value);
-        let response = await fetch('http://127.0.0.1:8000/api/token/', {
+        let response = await fetch(baseurl+'api/token/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -73,7 +73,7 @@ export const AuthProvider = ({ children }) => {
         })
     }
     let updateToken = async () => {
-        let responce = await fetch('http://127.0.0.1:8000/api/token/refresh/', {
+        let responce = await fetch(baseurl+'api/token/refresh/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -98,7 +98,7 @@ export const AuthProvider = ({ children }) => {
     const AdminLogins = async (e) => {
         e.preventDefault()
         console.log(e.target.username.value);
-        let response = await fetch("http://127.0.0.1:8000/api/token/", {
+        let response = await fetch(baseurl+"api/token/", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
