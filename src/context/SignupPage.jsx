@@ -46,7 +46,7 @@ const SignupPage = () => {
 		// e.preventDefault()
 		console.log(userData);
 
-		await axios.post("http://127.0.0.1:8000/accounts/register", {
+		await axios.post(" https://www.nextlabs.online/accounts/register", {
 			username: userData.username,
 			email: userData.email,
 			first_name: userData.first_name,
