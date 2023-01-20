@@ -43,7 +43,7 @@ const SignupPage = () => {
 
 
 	const onSubmitng = async (e) => {
-
+		// e.preventDefault()
 		console.log(userData);
 
 		await axios.post("http://127.0.0.1:8000/accounts/register", {
@@ -71,6 +71,9 @@ navigate("/")
 
 
 			}
+			// else {
+            // alert("ENTER CORRECT DATA",response.status)
+        // }
 
 			// if (response.status === 201) {
 			// 	Swal.fire({
@@ -102,11 +105,15 @@ navigate("/")
 			// 	}
 		}).catch((error) => {
 
-			const { data: { data } } = error.response
+			const { data: { catcherr } } = error.response
 			console.log("responseerror.data", error);
-			console.log("error", error.response);
-			console.log("ddddddddddddddddddddddddddddddddddd", data);
-			setErrorData(data)
+			console.log("errsssssssor", error.response.data.error);
+			// console.log("error", error.data.error);
+			console.log("ddddddddddddddddddddddddddddddddddd", catcherr);
+			setErrorData(error.response.data.error)
+		
+			console.log('error dataaa',errorData);
+			console.log('error dataaa',errorData.username);
 		}
 		)
 	}
@@ -152,6 +159,7 @@ navigate("/")
 
 										/>
 										{errors.first_name && (<small className='text-red-500'>{errors.first_name.message}</small>)}
+										
 
 
 									</div>

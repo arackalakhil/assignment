@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import axios from 'axios';
 import { MdDelete } from "react-icons/md";
 import AuthContext from "../context/AuthContext";
-import { format,} from 'timeago.js';
+import { format} from 'timeago.js';
 const Profile = () => {
   let { user,baseurl  } = useContext(AuthContext)
   let [data, setData] = useState([])

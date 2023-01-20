@@ -16,7 +16,7 @@ export const AuthProvider = ({ children }) => {
             ? jwt_decode(localStorage.getItem("authToken"))
             : null
     );
-    let  baseurl = 'https://assignmentbackend.vercel.app/'
+    let  baseurl = 'http://127.0.0.1:8000/'
     let [loading, setLoading] = useState(true)
     const navigate = useNavigate();
     const [error, setError] = useState(false)

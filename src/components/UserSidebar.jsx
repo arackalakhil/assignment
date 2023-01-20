@@ -97,12 +97,12 @@ if (!user.is_admin){
             )
           })}
 
-          <li className={`flex  rounded-md p-2 cursor-pointer font-bold  text-sm items-center gap-x-4 
+          <li onClick={logoutUser} className={`flex  rounded-md p-2 cursor-pointer font-bold  text-sm items-center gap-x-4 
                  mt-8  bg-white  hover:bg-blue-500  hover:text-white text-blue-500
                `} >
             <MdLogout />
             {/* <img onClick={AdminLogOut} src="https://raw.githubusercontent.com/Sridhar-C-25/sidebar_reactTailwind/main/src/assets/User.png" alt="menu" /> */}
-            <span onClick={logoutUser} className={`${!sideBar && "hidden"} origin-left duration-200 pl-4 `}>
+            <span  className={`${!sideBar && "hidden"} origin-left duration-200 pl-4 `}>
               Logout
             </span>
 

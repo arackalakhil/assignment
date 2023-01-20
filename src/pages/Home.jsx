@@ -45,8 +45,11 @@ const Home = () => {
     const uploadData=(e)=>{
         e.preventDefault()
       
-        console.log('image is ',files);
-       
+        console.log('image issdfsdfsdf ',files.length);
+        if(files.length == 0){
+        setMessage("select one image")
+        }
+       else{
       axios.post(baseurl+"accounts/completetask",{
         users:user.user_id,
         image:files[0],
@@ -66,7 +69,7 @@ const Home = () => {
       }).catch((err)=>{
         console.log('errors catch',err);
       })
-      }
+      }}
 
     const token = JSON.parse(localStorage.getItem("authToken"))
 
@@ -134,18 +137,17 @@ const Home = () => {
                 <div className=" h-auto mr-5 ">
                     <div className="bg-gray-600 text-slate-100 mt-10 px-5 py-3.5   rounded-lg shadow hover:shadow-xl  mx-auto transform hover:-translate-y-[0.125rem] transition duration-100 ease-linear">
 
-                        <div className="flex items-center mt-2 rounded-lg py-1 cursor-pointer">
+                        <div className="flex items-center mt-2 rounded-lg py-1 cursor-pointer justify-between">
                             <div className="relative flex flex-shrink-0 items-end">
                                 <img className="h-20 w-20 " src={list.Appimagelink} />
+                                <div className="ml-3.5 xl:pl-10 ">
+                                    <span className=" tracking-tight text-center ml font-extrabold text-zinc-900  xl:text-3xl">{list.Appname}</span>
+                                    <span className="text-xs leading-none opacity-50"></span>
+                                    <p className="text-xs leading-4 pt-2 italic opacity-70 "></p>
+                                    <span className="font-light text-blue-500  leading-4 opacity-75" onClick={() => { viewdata(list.id) }}>tap to view more</span>
+                                    {/* <span className="font-light text-blue-500  leading-4 opacity-75" onClick={details} >tap to view more</span> */}
 
-                            </div>
-                            <div className="ml-3.5 xl:pl-10 ">
-                                <span className=" tracking-tight text-center ml font-extrabold text-zinc-900  xl:text-3xl">{list.Appname}</span>
-                                <span className="text-xs leading-none opacity-50"></span>
-                                <p className="text-xs leading-4 pt-2 italic opacity-70 "></p>
-                                <span className="font-light text-blue-500  leading-4 opacity-75" onClick={() => { viewdata(list.id) }}>tap to view more</span>
-                                {/* <span className="font-light text-blue-500  leading-4 opacity-75" onClick={details} >tap to view more</span> */}
-
+                                </div>
                             </div>
                             <div className=" ml-3.5 xl:pl-72 w-full  ">
 
