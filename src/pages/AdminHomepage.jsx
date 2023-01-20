@@ -44,12 +44,12 @@ useEffect(() => {
                                     <th className="p-2 whitespace-nowrap">
                                         <div className="font-semibold text-left">APP</div>
                                     </th>
-                                    <th className="p-2 whitespace-nowrap">
+                                    {/* <th className="p-2 whitespace-nowrap">
                                         <div className="font-semibold text-left">Appcategory</div>
                                     </th>
                                     <th className="p-2 whitespace-nowrap">
                                         <div className="font-semibold text-left">AppSubcategory</div>
-                                    </th>
+                                    </th> */}
                                     <th className="p-2 whitespace-nowrap">
                                         <div className="font-semibold text-left">Points</div>
                                     </th>
@@ -67,12 +67,12 @@ useEffect(() => {
                                             <div className="font-medium text-gray-800">{list.Appname}</div>
                                         </div>
                                     </td>
-                                    <td className="p-2 whitespace-nowrap">
+                                    {/* <td className="p-2 whitespace-nowrap">
                                         <div className="text-left">{list.appcategory}</div>
                                     </td>
                                     <td className="p-2 whitespace-nowrap">
                                         <div className="text-lg text-center">{list.subcategory}</div>
-                                    </td>
+                                    </td> */}
                                     <td className="p-2 whitespace-nowrap">
                                         <div className="text-left font-medium text-green-500">{list.points}</div>
                                     </td>
