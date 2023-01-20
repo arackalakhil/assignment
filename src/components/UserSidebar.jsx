@@ -50,7 +50,7 @@ if (!user.is_admin){
    menu =[
     {
       menuTitle: "Home",
-      path: "/adminhome",
+      path: "/adminhome/home",
       logo: <FaCoins />
     },
     {
