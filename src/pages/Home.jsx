@@ -135,13 +135,17 @@ const Home = () => {
           data.map((list, id) => {
             return (
                 <div className=" h-auto mr-5 ">
-                    <div className="bg-gray-600 text-slate-100 mt-10 px-5 py-3.5   rounded-lg shadow hover:shadow-xl  mx-auto transform hover:-translate-y-[0.125rem] transition duration-100 ease-linear">
+                    <div className="bg-gray-200 text-slate-100 mt-10 px-5 py-3.5   rounded-lg shadow hover:shadow-xl  mx-auto transform hover:-translate-y-[0.125rem] transition duration-100 ease-linear">
 
                         <div className="flex items-center mt-2 rounded-lg py-1 cursor-pointer justify-between">
                             <div className="relative flex flex-shrink-0 items-end">
                                 <img className="h-20 w-20 " src={list.Appimagelink} />
                                 <div className="ml-3.5 xl:pl-10 ">
                                     <span className=" tracking-tight text-center ml font-extrabold text-zinc-900  xl:text-3xl">{list.Appname}</span>
+                                    <div className=" ml-3.5 xl:pl-[600px] md:pl-[250px] w-full  ">
+
+<button className="px-1 py-2 text-white bg-blue-500 rounded shadow-xl " >{list.points}Points</button>
+</div>
                                     <span className="text-xs leading-none opacity-50"></span>
                                     <p className="text-xs leading-4 pt-2 italic opacity-70 "></p>
                                     <span className="font-light text-blue-500  leading-4 opacity-75" onClick={() => { viewdata(list.id) }}>tap to view more</span>
@@ -149,10 +153,10 @@ const Home = () => {
 
                                 </div>
                             </div>
-                            <div className=" ml-3.5 xl:pl-72 w-full  ">
+                            {/* <div className=" ml-3.5 xl:pl-72 w-full  ">
 
                                 <button className="px-4 py-2 text-white bg-blue-500 rounded shadow-xl " >{list.points}Points</button>
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>
@@ -163,8 +167,8 @@ const Home = () => {
                 :
 
 
-                <div className=" h-auto mr-5 ">
-                    <div className="bg-gray-600 text-slate-100 mt-10 px-5 py-3.5   rounded-lg shadow hover:shadow-xl  mx-auto transform hover:-translate-y-[0.125rem] transition duration-100 ease-linear">
+                <div className="  md:ml-0 h-fit mr-28 ">
+                    <div className="bg-gray-200 text-slate-100 mt-10 px-5 py-3.5   rounded-lg shadow hover:shadow-xl   transform hover:-translate-y-[0.125rem] transition duration-100 ease-linear">
                         <span className='text-blue-500 cursor-pointer' onClick={details}>back</span>
                         <div className="flex items-center mt-2 rounded-lg py-1 cursor-pointer">
                             <div className="relative flex flex-shrink-0 items-end">
@@ -172,18 +176,19 @@ const Home = () => {
 
                             </div>
                             <div className="ml-3.5 xl:pl-10 ">
-                                <span className=" tracking-tight text-center ml font-extrabold text-zinc-900  xl:text-3xl">{preloaddata.Appname}</span>
+                                <span className=" tracking-tight text-center ml font-extrabold text-zinc-200  xl:text-3xl">{preloaddata.Appname}</span>
                                 <span className="text-xs leading-none opacity-50"></span>
+                                <div className=" ml-3.5 xl:pl-72 w-fit md:pl-[185px]  ">
+                                <button className="px-2 py-2 text-white bg-blue-500  rounded shadow-xl">{preloaddata.points}</button>
+                            </div>
                                 <p className="text-xs leading-4 pt-2 italic opacity-70 "></p>
-                                <a  href={preloaddata.Applink} className="font-light text-blue-500  leading-4 opacity-75">{preloaddata.Applink}</a>
+                                <a  href={preloaddata.Applink} target="_blank"  className="font-light text-blue-500  leading-4 opacity-75">{preloaddata.Applink}</a>
                             </div>
-                            <div className=" ml-3.5 xl:pl-72 w-full  ">
-                                <button className="px-4 py-2 text-white bg-blue-500 rounded shadow-xl">{preloaddata.points}</button>
-                            </div>
+                           
 
                         </div>
 
-                        <div className="h-screen flex justify-center items-center bg-gray-900 px-2">
+                        <div className="h-fit flex justify-center items-center bg-gray-900 px-2">
 
 <div className="p-3 md:w-1/2 w-[360px] rounded-md">
     <span className="flex justify-center items-center bg-white text-[12px] mb-1 text-red-500">{message}</span>

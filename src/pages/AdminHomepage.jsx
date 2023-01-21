@@ -30,11 +30,11 @@ useEffect(() => {
   getData()
 }, []);
   return (
-    <section className="antialiased bg-gray-100 text-gray-600  px-4">
-        <div className="flex flex-col justify-center h-full">
+    <section className="antialiased bg-gray-100 text-gray-600  px-4 mr-5 mt-5">
+        <div className="flex flex-col justify-center h-full pt-2 pb-2">
             <div className="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
                 <header className="px-5 py-4 border-b border-gray-100">
-                    <h2 className="font-semibold text-gray-800">Customers</h2>
+                    <h2 className="font-semibold text-gray-800">My Apps</h2>
                 </header>
                 <div className="p-3">
                     <div className="overflow-x-auto">

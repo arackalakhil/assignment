@@ -31,9 +31,9 @@ useEffect(() => {
 }, []);
   return (
     <>
-<section className="antialiased bg-gray-100 text-gray-600  px-4">
-    <div className="flex flex-col justify-center h-full">
-        <div className="w-full max-w-2xl mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
+<section className=" bg-gray-200 text-gray-600 mr-5 my-5 ">
+    <div className="flex flex-col justify-center h-fit">
+        <div className="w-fit max-w-fit mx-auto bg-white shadow-lg rounded-sm border border-gray-200">
             <header className="px-5 py-4 border-b border-gray-100">
                 <h2 className="font-semibold text-gray-800">Completed Task</h2>
             </header>

@@ -8,7 +8,7 @@ const UserHome = () => {
     <div className='flex gap-8'>
 
     <UserSidebar />
-    <div className='w-full'>
+    <div className='w-full ' >
       <Outlet />
     </div>
     </div>

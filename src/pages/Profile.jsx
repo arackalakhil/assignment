@@ -38,8 +38,8 @@ const Profile = () => {
   return (
 <>
 
-<body class="bg-gray-300 antialiased">
-    <div class="container mx-auto my-auto">
+<body class="bg-gray-300 antialiased mt-4 mr-4">
+    <div class="container mx-auto my-auto pt-3 pb-3">
         <div>
 
             <div class="bg-white relative shadow rounded-lg w-5/6 md:w-5/6  lg:w-4/6 xl:w-3/6 mx-auto">

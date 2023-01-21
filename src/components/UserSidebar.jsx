@@ -13,6 +13,7 @@ import { FaCoins } from "react-icons/fa";
 import {BsPersonFill} from "react-icons/bs";
 
 import { DiReact } from "react-icons/di";
+import {AiOutlinePlusCircle} from "react-icons/ai";
 function UserSidebar() {
   let { user, logoutUser } = useContext(AuthContext)
   let   [sizer,SetSizer]=useState(false)
@@ -51,19 +52,19 @@ if (!user.is_admin){
     {
       menuTitle: "Home",
       path: "/adminhome/home",
-      logo: <FaCoins />
+      logo: <AiOutlineHome />
     },
     {
       menuTitle: "Add Apps",
       path: "/adminhome/add",
-      logo: <FaCoins />
+      logo: <AiOutlinePlusCircle />
     },
   ]
 
   }
   return (
     <div className={`${sideBar ? "w-62" : "w-20"} h-screen  relative  `}>
-      <div className={` ${sideBar ? "w-[15rem]" : "w-20"}  p-5 pt-8 bg-slate-500 h-full shadow-custom`}>
+      <div className={` ${sideBar ? "w-[15rem]" : "w-20"}  p-5 pt-8 bg-gray-400 h-full shadow-custom`}>
 
         <DiReact className={`${sideBar ? "left-56" : ""} absolute cursor-pointer text-blue top-9 w-7 border-blue-900
     border-2 rounded-full  ${!sideBar && "rotate-360"}`}

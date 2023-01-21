@@ -16,6 +16,7 @@ const SignupPage = () => {
 	const navigate = useNavigate();
 	const Swal = require("sweetalert2")
 	const { register, handleSubmit, getValues, formState: { errors } } = useForm()
+	let { user,baseurl  } = useContext(AuthContext)
 
 	const [userData, setUserData] = useState({
 		username: '',
@@ -46,7 +47,7 @@ const SignupPage = () => {
 		// e.preventDefault()
 		console.log(userData);
 
-		await axios.post(" https://www.nextlabs.online/accounts/register", {
+		await axios.post(baseurl+"/accounts/register", {
 			username: userData.username,
 			email: userData.email,
 			first_name: userData.first_name,

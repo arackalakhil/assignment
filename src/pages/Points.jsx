@@ -34,14 +34,14 @@ useEffect(() => {
   return (
    <>
 
-      <div className="relative py-16 bg-gradient-to-br from-sky-50 to-gray-200">
+      <div className="relative py-16 my-10 mr-4 bg-gradient-to-br from-sky-50 to-gray-200">
         <div className="relative container m-auto px-6 text-gray-500 md:px-12 xl:px-40">
           <div className="m-auto md:w-8/12 lg:w-6/12 xl:w-6/12">
             <div className="rounded-xl bg-white shadow-xl">
               <div className="p-6 sm:p-16">
                 <div className="space-y-4">
 
-                  <h2 className="mb-8 text-2xl text-cyan-900 font-bold">POINTS</h2>
+                  <h2 className="mb-8 text-2xl text-cyan-900 font-bold">MY POINTS</h2>
                 </div>
                 <div className="mt-16 grid space-y-4">
                   <button className="group h-12 px-6 border-2 border-gray-300 rounded-full transition duration-300 

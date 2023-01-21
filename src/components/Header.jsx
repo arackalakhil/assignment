@@ -10,9 +10,9 @@ const Header = () => {
   return (
    <>
 <nav className=" bg-white border-gray-200 w-auto dark:bg-gray-900 dark:border-gray-700">
-    <div className='h-6 bg-slate-500'></div>
+    <div className='h-6 bg-gray-400'></div>
     <div className='text-center bg-gray-100 h-12 py-2 '><h1 className='font-bold '>HI {user?.username}</h1></div>
-    <div className='h-14 bg-slate-500 w-full '></div>
+    <div className='h-14 bg-gray-400 w-full '></div>
 </nav>
 
    </>
