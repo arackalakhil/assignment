@@ -47,7 +47,7 @@ const SignupPage = () => {
 		// e.preventDefault()
 		console.log(userData);
 
-		await axios.post(baseurl+"/accounts/register", {
+		await axios.post(baseurl+"accounts/register", {
 			username: userData.username,
 			email: userData.email,
 			first_name: userData.first_name,
@@ -106,15 +106,15 @@ navigate("/")
 			// 	}
 		}).catch((error) => {
 
-			const { data: { catcherr } } = error.response
+			const { data: { catcherr } } = error?.response
 			console.log("responseerror.data", error);
-			console.log("errsssssssor", error.response.data.error);
+			console.log("errsssssssor", error?.response?.data?.error);
 			// console.log("error", error.data.error);
 			console.log("ddddddddddddddddddddddddddddddddddd", catcherr);
-			setErrorData(error.response.data.error)
+			setErrorData(error?.response?.data?.error)
 		
 			console.log('error dataaa',errorData);
-			console.log('error dataaa',errorData.username);
+			console.log('error dataaa',errorData?.username);
 		}
 		)
 	}
