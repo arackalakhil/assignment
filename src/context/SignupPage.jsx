@@ -156,10 +156,10 @@ navigate("/")
 											type="text"
 											onChange={handleChange}
 											placeholder="First Name"
-											value={userData.first_name}
+											value={userData?.first_name}
 
 										/>
-										{errors.first_name && (<small className='text-red-500'>{errors.first_name.message}</small>)}
+										{errors?.first_name && (<small className='text-red-500'>{errors?.first_name?.message}</small>)}
 										
 
 
@@ -180,11 +180,11 @@ navigate("/")
 											name="last_name"
 											type="text"
 											onChange={handleChange}
-											value={userData.last_name}
+											value={userData?.last_name}
 
 											placeholder="Last Name"
 										/>
-										{errors.last_name && (<small className='text-red-500'>{errors.last_name.message}</small>)}
+										{errors?.last_name && (<small className='text-red-500'>{errors?.last_name?.message}</small>)}
 
 									</div>
 								</div>
@@ -204,12 +204,12 @@ navigate("/")
 										name="email"
 										type="email"
 										onChange={handleChange}
-										value={userData.email}
+										value={userData?.email}
 
 										placeholder="Email"
 									/>
-									{errors.email && (<small className='text-red-500'>{errors.email.message}</small>)}
-									<small className='text-red-500'>{errorData.email}</small>
+									{errors?.email && (<small className='text-red-500'>{errors?.email?.message}</small>)}
+									<small className='text-red-500'>{errorData?.email}</small>
 								</div>
 								<div className="mb-4">
 									<label className="block mb-2 text-sm font-bold text-gray-700" for="email">
@@ -227,12 +227,12 @@ navigate("/")
 										name="phone_number"
 										type="text"
 										onChange={handleChange}
-										value={userData.phone_number}
+										value={userData?.phone_number}
 
 										placeholder="number"
 									/>
-									{errors.phone_number && (<small className='text-red-500'>{errors.phone_number.message}</small>)}
-									<small className='text-red-500'>{errorData.phone_number}</small>
+									{errors?.phone_number && (<small className='text-red-500'>{errors?.phone_number?.message}</small>)}
+									<small className='text-red-500'>{errorData?.phone_number}</small>
 
 								</div>
 								<div className="mb-4 md:flex md:justify-between">
@@ -252,12 +252,12 @@ navigate("/")
 											name="username"
 											type="text"
 											onChange={handleChange}
-											value={userData.username}
+											value={userData?.username}
 
 											placeholder="username"
 										/>
-										{errors.username && (<small className='text-red-700'>{errors.username.message}</small>)}
-										{<small className='text-red-500'>{errorData.username}</small>}
+										{errors?.username && (<small className='text-red-700'>{errors?.username?.message}</small>)}
+										{<small className='text-red-500'>{errorData?.username}</small>}
 
 
 									</div>
@@ -276,11 +276,11 @@ navigate("/")
 											type="password"
 											onChange={handleChange}
 
-											value={userData.password}
+											value={userData?.password}
 
 											placeholder="******************"
 										/>
-										{errors.password && (<small className='text-red-700'>{errors.password.message}</small>)}
+										{errors?.password && (<small className='text-red-700'>{errors?.password?.message}</small>)}
 
 									</div>
 									<div className="md:ml-2">
@@ -302,11 +302,11 @@ navigate("/")
 											type="password"
 
 											onChange={handleChange}
-											value={userData.password2}
+											value={userData?.password2}
 
 											placeholder="******************"
 										/>
-										{errors.password2 && (<small className='text-red-700'>{errors.password2.message}</small>)}
+										{errors?.password2 && (<small className='text-red-700'>{errors?.password2?.message}</small>)}
 
 									</div>
 								</div>

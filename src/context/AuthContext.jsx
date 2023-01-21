@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
             : null
     );
     // let  baseurl = 'http://127.0.0.1:8000/'
-    let  baseurl = ' https://www.nextlabs.online/'
+    let  baseurl = 'https://www.nextlabs.online/'
    
     let [loading, setLoading] = useState(true)
     const navigate = useNavigate();
