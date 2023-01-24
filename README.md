@@ -12,15 +12,13 @@ This project is a React-based application that features a login page, signup pag
 1. Clone the repository
 git clone git@gitlab.com:makhil029/assignment-frontend.git
 
-Copy code
+
 2. Install the dependencies
 npm install
 
-Copy code
 3. Start the development server
 npm start
 
-Copy code
 4. Open [http://localhost:3000](http://localhost:3000) to view the application in the browser.
 
 ## Contributing
@@ -28,7 +26,7 @@ Copy code
 1. Fork the repository
 2. Create a new branch for your feature
 3. Commit your changes and open a pull request
-##to view
+## to view
 https://assignment-frontend-one.vercel.app/
 ## login
 ![login](https://user-images.githubusercontent.com/42874037/214231339-c4f50136-1288-4730-8855-e731c6c91678.JPG)
