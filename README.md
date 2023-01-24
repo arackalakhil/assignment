@@ -30,18 +30,18 @@ npm start
 https://assignment-frontend-one.vercel.app/
 ## login
 ![login](https://user-images.githubusercontent.com/42874037/214231339-c4f50136-1288-4730-8855-e731c6c91678.JPG)
-##signup
+## signup
 ![signup](https://user-images.githubusercontent.com/42874037/214231377-5358428f-10b4-4814-ac80-6fb52c4ebe97.JPG)
 
-##user home
+## user home
 ![user](https://user-images.githubusercontent.com/42874037/214231429-04f78879-f2ad-433e-800c-86703db33edf.JPG)
 
-##logout
+## logout
 ![logout](https://user-images.githubusercontent.com/42874037/214231527-9547008a-01c1-4819-b7ac-1331b090674b.JPG)
-##Admin home
+## Admin home
 ![admin home](https://user-images.githubusercontent.com/42874037/214231575-effa63df-2e61-47e1-a797-d64251c412c7.JPG)
 
-##add app
+## add app
 ![add app](https://user-images.githubusercontent.com/42874037/214231632-ef0020b0-f65a-4ecf-8fde-0526985e060e.JPG)
 
 
